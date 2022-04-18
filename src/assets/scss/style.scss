@@ -1,7 +1,13 @@
 @import 'iconfont';
 
-$primary: #0635c9 !default;
-$secondary: lighten($primary, 20) !default;
+//$primary: #0635c9 !default;
+//$primary: #3d3bee !default;
+$primary: #4834d4 !default;
+//$secondary: lighten($primary, 20) !default;
+//$secondary: #e24155 !default;
+$secondary: #f36 !default;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
 // Custom Component
 .card {
