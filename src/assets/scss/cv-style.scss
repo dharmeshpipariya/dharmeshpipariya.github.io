@@ -145,7 +145,7 @@ p {
   color: white;
   background-color: $primary;
 
-  @media (max-width: 991px) {
+  @media (max-width: 599px) {
     flex-direction: column;
   }
 }
@@ -209,7 +209,16 @@ p {
 }
 
 .header-content {
-  padding-left: 1.5rem;
+  @media (min-width: 600px) {
+    padding-left: 1.5rem;
+  }
+
+  @media (max-width: 599px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
 }
 
 .header-title {
@@ -236,9 +245,14 @@ p {
   align-items: flex-start;
 
   svg {
+    flex: 0 0 auto;
     width: 20px;
     height: 20px;
     margin-right: .5rem;
+  }
+
+  @media (max-width: 599px) {
+    max-width: 280px;
   }
 }
 
@@ -264,6 +278,15 @@ p {
 
     span {
       border-bottom: 1px solid currentColor;
+    }
+  }
+
+  @media (max-width: 599px) {
+    max-width: 280px;
+    margin: 0.25rem 0;
+
+    .contact-item {
+      margin: .25rem 0;
     }
   }
 }
@@ -362,6 +385,10 @@ p {
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: #F5F8F9;
+
+  @media (max-width: 599px) {
+    padding: .75rem;
+  }
 }
 
 .progress {
